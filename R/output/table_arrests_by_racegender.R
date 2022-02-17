@@ -17,6 +17,7 @@ read_csv(here("data/NLSY97_clean.csv")) %>%
   rename_with(to_title_case) %>%
   
   # create the kable object. Requires booktabs and float LaTeX packages
+  # changed title name
   kbl(
     caption = "Average Incarceration Status in 2002 by Race and Gender",
     booktabs = TRUE,
