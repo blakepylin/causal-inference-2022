@@ -13,13 +13,13 @@ se <- model %>% vcovHC %>% diag %>% sqrt
 # Note that stargazer treats the intercept differently so we drop it (the [-1] part)
 covariate.labels <- names(coef(model))[-1] %>% str_replace("(^race)|(^gender)", "")
 
-# omitted is "Mixed Male"
+
 stargazer(
   model,
   se = list(se),
   covariate.labels = covariate.labels,
   dep.var.labels = "Incarceration in 2002",
   out = here("tables/regress_incarc_by_racegender.tex"),
-  title = "Regression Output. Omitted category is Mixed Race Males.",
+  title = "Regression Output. Omitted category is Black Females.",
   label = "tab:regression"
 )
