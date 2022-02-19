@@ -8,9 +8,9 @@ read_csv(here("data/NLSY97_clean.csv")) %>%
     geom_bar(stat = "identity", position = "dodge") +
     labs(
       x = "Race", 
-      y = "Mean Incarceration", 
+      y = "Mean Months", 
       fill = "Gender",
-      title = "Mean number of Incarcerated in 2002 by Race and Gender") +
+      title = "Mean Months in Incarceration in 2002 by Race and Gender") +
     theme_minimal() +
     scale_fill_economist()
 

@@ -19,7 +19,7 @@ read_csv(here("data/NLSY97_clean.csv")) %>%
   # create the kable object. Requires booktabs and float LaTeX packages
   # changed title name
   kbl(
-    caption = "Mean number of Incarcerated in 2002 by Race and Gender",
+    caption = "Mean Months in Incarceration in 2002 by Race and Gender",
     booktabs = TRUE,
     format = "latex",
     label = "tab:summarystats"
